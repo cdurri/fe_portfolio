@@ -566,3 +566,39 @@ p {
 
 a {
   text-decoration: none; }
+
+.header {
+  padding: 2rem 0;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0 1px 10px #1d1d1d;
+          box-shadow: 0 1px 10px #1d1d1d; }
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+  .header__brand {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #707070;
+    -webkit-box-shadow: 0 3px 10px #1d1d1d;
+            box-shadow: 0 3px 10px #1d1d1d; }
+  .header__nav {
+    width: 40rem;
+    font-weight: 600;
+    margin-right: 20rem;
+    margin-left: auto; }
+  .header__nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__nav-item a {
+    color: #707070; }
