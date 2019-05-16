@@ -10,16 +10,31 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/criticalCSS.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/hamburgers.min.css">
     <style></style>
     <!-- build:css css/styles.min.css-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- endbuild-->
   </head>
   <body>
-    <header>This is header</header>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__brand"><a class="header__brand-link" href="#"><img class="header__brand-image" src="./images/cian-portrait.jpg"></a></div>
+        <div class="header__nav">
+          <ul class="header__nav-items">
+            <li class="header__nav-item"><a href="#">Home</a></li>
+            <li class="header__nav-item"><a href="#">Projects</a></li>
+            <li class="header__nav-item"><a href="#">Skills</a></li>
+            <li class="header__nav-item"><a href="#">About</a></li>
+            <li class="header__nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <button class="hamburger hamburger--collapse" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+      </div>
+    </header>
     <main>
       <div class="container">
-        <h1>Home pages</h1>
+        <h1>Home page</h1>
       </div>
     </main>
     <footer>This is footer</footer>
