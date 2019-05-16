@@ -1,4 +1,4 @@
-$dot: 0.1rem;
+$dot: 1px;
 //min for horizontal mobile
 @mixin min-s {
   @media (min-width: #{$break-s}) {

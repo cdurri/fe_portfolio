@@ -593,6 +593,9 @@ a {
     font-weight: 600;
     margin-right: 20rem;
     margin-left: auto; }
+  @media (max-width: 767px) {
+    .header__nav {
+      display: none; } }
   .header__nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -602,3 +605,8 @@ a {
             justify-content: space-between; }
   .header__nav-item a {
     color: #707070; }
+  .header .hamburger {
+    margin-left: auto; }
+  @media (min-width: 768px) {
+    .header .hamburger {
+      display: none; } }
