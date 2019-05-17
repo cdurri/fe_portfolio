@@ -33,6 +33,7 @@ const FE = {
 
       init: function() {
         FE.global.toggleActiveClass('.hamburger', '.hamburger', 'is-active');
+        FE.global.toggleActiveClass('.hamburger', '.mobile-nav', 'is-active');
       }
 
     }

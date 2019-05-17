@@ -8,14 +8,19 @@
   }
   &__brand {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 2rem;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
     background-color: $gray-dark;
     box-shadow: 0 3px 10px $dark;
+    @include min-sm {
+      top: 0;
+      width: 120px;
+      height: 120px;
+    }
   }
   &__nav {
     width: 40rem;
@@ -39,6 +44,16 @@
   }
   .hamburger {
     margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hamburger-inner {
+    width: 34px;
+    height: 3px;
+    &:before, &:after {
+      width: 34px;
+      height: 3px;
+    }
   }
   @include min-sm {
     .hamburger {
