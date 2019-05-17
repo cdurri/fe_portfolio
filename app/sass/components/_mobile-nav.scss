@@ -1,0 +1,21 @@
+.mobile-nav {
+  position: absolute;
+  top: 71px;
+  right: -300px;
+  width: 300px;
+  background: $gray-light;
+  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.5);
+  transition: all .3s linear;
+  @include min-sm {
+    display: none;
+  }
+  &.is-active {
+    right: 0;
+  }
+  &__inner {
+    padding: 20px;
+  }
+  &__item {
+    padding-bottom: 5px;
+  }
+}
