@@ -1,7 +1,14 @@
 .header {
+  position: relative;
+  z-index: 1000;
   padding: 2rem 0;
   background-color: $primary-background;
   box-shadow: 0 1px 10px $dark;
+  border-bottom: 2px solid $primary-gold;
+  &:hover &__brand {
+    transform: scale(1.05);
+    transition: all .2s linear;
+  }
   &__inner {
     display: flex;
     position: relative;
@@ -16,6 +23,7 @@
     overflow: hidden;
     background-color: $gray-dark;
     box-shadow: 0 3px 10px $dark;
+    transition: all .2s linear;
     @include min-sm {
       top: 0;
       width: 120px;
@@ -40,7 +48,12 @@
   &__nav-item {
     a {
       color: $gray-dark;
+      transition: all .2s linear;
+      &:hover {
+        color: $primary-gold;
+      }
     }
+
   }
   .hamburger {
     margin-left: auto;

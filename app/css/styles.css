@@ -537,8 +537,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #1d1d1d;
-  position: relative;
-  overflow-x: hidden; }
+  position: relative; }
 
 h1,
 h2,
@@ -570,10 +569,18 @@ a {
   text-decoration: none; }
 
 .header {
+  position: relative;
+  z-index: 1000;
   padding: 2rem 0;
   background-color: #f8f8f8;
   -webkit-box-shadow: 0 1px 10px #1d1d1d;
-          box-shadow: 0 1px 10px #1d1d1d; }
+          box-shadow: 0 1px 10px #1d1d1d;
+  border-bottom: 2px solid #E9BA2B; }
+  .header:hover .header__brand {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; }
   .header__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -589,7 +596,9 @@ a {
     overflow: hidden;
     background-color: #707070;
     -webkit-box-shadow: 0 3px 10px #1d1d1d;
-            box-shadow: 0 3px 10px #1d1d1d; }
+            box-shadow: 0 3px 10px #1d1d1d;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; }
     @media (min-width: 768px) {
       .header__brand {
         top: 0;
@@ -611,7 +620,11 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header__nav-item a {
-    color: #707070; }
+    color: #707070;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; }
+    .header__nav-item a:hover {
+      color: #E9BA2B; }
   .header .hamburger {
     margin-left: auto;
     padding-top: 0;
@@ -628,9 +641,11 @@ a {
 
 .mobile-nav {
   position: absolute;
-  top: 71px;
-  right: -300px;
-  width: 300px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  left: 0;
+  width: 100%;
+  font-weight: 600;
   background: #f8f8f8;
   -webkit-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
@@ -640,8 +655,13 @@ a {
     .mobile-nav {
       display: none; } }
   .mobile-nav.is-active {
-    right: 0; }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   .mobile-nav__inner {
     padding: 20px; }
+  .mobile-nav__menu {
+    text-align: center; }
   .mobile-nav__item {
     padding-bottom: 5px; }
+    .mobile-nav__item a {
+      color: #707070; }
