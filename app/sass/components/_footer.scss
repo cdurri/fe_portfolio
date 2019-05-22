@@ -1,0 +1,47 @@
+.footer {
+  height: 200px;
+  margin-top: auto;
+  background: $dark;
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+    padding-bottom: 20px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid $gray;
+    &:hover {
+      animation-name: spinner;
+      animation-duration: .5s;
+    }
+  }
+  .icon-github, .icon-linkedin2 {
+    color: $gray;
+    font-size: 32px;
+  }
+  &__copyright {
+    color: $gray;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
