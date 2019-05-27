@@ -773,7 +773,17 @@ a {
 .hero {
   height: calc(100vh - 66px); }
   .hero__inner {
+    position: relative;
     height: 100%; }
+  .hero__content {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    text-transform: uppercase; }
   .hero__figure {
     position: relative;
     margin: 0;
