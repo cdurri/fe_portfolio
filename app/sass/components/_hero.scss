@@ -1,7 +1,18 @@
 .hero {
   height: calc(100vh - 66px);
   &__inner {
+    position: relative;
     height: 100%;
+  }
+  &__content {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color: $light;
+    text-transform: uppercase;
   }
   &__figure {
     position: relative;
